@@ -1,0 +1,186 @@
+const data = [
+  {
+    id: 1,
+    img: "/images/productImg1.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 2,
+    img: "/images/productImg2.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 3,
+    img: "/images/productImg3.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 4,
+    img: "/images/productImg4.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 5,
+    img: "/images/productImg5.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 6,
+    img: "/images/productImg6.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 7,
+    img: "/images/productImg7.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 8,
+    img: "/images/productImg8.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 9,
+    img: "/images/productImg9.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+  {
+    id: 10,
+    img: "/images/productImg10.jpg",
+    name: "Kvadratcha",
+    season: "qish",
+  },
+
+  {
+    id: 11,
+    img: "/images/productImg11.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 12,
+    img: "/images/productImg12.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 13,
+    img: "/images/productImg13.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 14,
+    img: "/images/productImg14.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 15,
+    img: "/images/productImg15.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 16,
+    img: "/images/productImg16.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 17,
+    img: "/images/productImg17.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 18,
+    img: "/images/productImg18.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 19,
+    img: "/images/productImg19.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+  {
+    id: 20,
+    img: "/images/productImg20.jpg",
+    name: "Kvadratcha",
+    season: "yoz",
+  },
+
+  {
+    id: 21,
+    img: "/images/productImg21.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 22,
+    img: "/images/productImg22.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 23,
+    img: "/images/productImg23.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 24,
+    img: "/images/productImg24.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 25,
+    img: "/images/productImg25.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 26,
+    img: "/images/productImg26.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 27,
+    img: "/images/productImg27.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 28,
+    img: "/images/productImg28.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 29,
+    img: "/images/productImg29.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+  {
+    id: 30,
+    img: "/images/productImg30.jpg",
+    name: "Kvadratcha",
+    season: "kuz",
+  },
+];
+
+export default data;
