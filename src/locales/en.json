@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "toplam": "Collection",
+        "haqida": "About us",
+        "aloqa": "Contact",
+        "uzb": "Uzbek",
+        "rus": "Russian",
+        "eng": "English"
+    },
+    "footer": {
+        "body": "'Bukhara Natural Product' is a company that has been producing cotton fabrics for use all over the world for many years.",
+        "menu": "Menu",
+        "body2": "Bukhara, St. Alpomish 80. Bnpuz@bk.ru bnp_fabrik info@bnpfabric.com +998 93 383 75 85 +998 93 960 78 00",
+        "email": "Subscribe to our email",
+        "emailPlace": "Enter your email",
+        "search": "Search",
+        "body3": "© 2024 BUKHORA NATURAL PRODUCT LLC. All rights reserved."
+    },
+    "home": {
+        "sifat": "Material quality",
+        "buxoroMahsuloti": "'Natural product of Bukhara'",
+        "buxoroMahsulotiBody": "for many years has been a company producing cotton fabrics for use all over the world",
+        "data": {
+            "head1": "Free shipping",
+            "body1": "Free shipping on all orders",
+            "head2": "Return Guarantee",
+            "body2": "30 days money back",
+            "head3": "24/7 online support",
+            "body3": "24/7 technical support",
+            "head4": "Secure payment",
+            "body4": "All payment methods are accepted"
+        },
+        "buxoro": "Bukhara",
+        "tabiiy": "Natural",
+        "mahsuloti": "Product",
+        "qish": "Winter collection",
+        "yoz": "Summer collection",
+        "kuz": "Autumn collection"
+    }
+}

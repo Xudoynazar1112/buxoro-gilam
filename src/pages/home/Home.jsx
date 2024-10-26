@@ -1,56 +1,59 @@
 import React from "react";
 import mainData from "../data";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const ArrowAd = ({ img, color }) => {
+
+  const {t, i18n} = useTranslation()
   return (
     <div
-      className={`flex items-center justify-center h-80 my-52 rounded-2xl bg-[${color}] box-shadow transition-all`}
-      style={{ backgroundColor: color }}
-    >
-      <div className="text-white pl-20">
-        <p className="text-[70px] font-semibold">100%</p>
-        <p>Material sifati</p>
+      className={`md:flex md:flex-row flex flex-col md:px-10 items-center justify-center md:h-80 h-[30rem] md:my-52 my-20 rounded-2xl bg-[${color}] box-shadow transition-all`}
+      style={{ backgroundColor: color }}>
+      <div className="text-white  flex gap-3 md:flex md:flex-col">
+        <p className="md:text-[70px] font-semibold text-base">100%</p>
+        <p>{t('home.sifat')}</p>
       </div>
-      <img src={img} className="w-[67%]" alt="photo" />
-      <div className="pr-20 text-white flex flex-col gap-5">
-        <p className="text-4xl">"Buxoro tabiiy mahsuloti"</p>
-        <p>
-          ko'p yillar davomida butun dunyoda foydalanish uchun paxta matolarini
-          ishlab chiqaradigan kompaniya bo'lib kelgan
+      <img src={img} className="md:w-[67%] w-[40%]" alt="photo" />
+      <div className="md:pr-20 text-white md:flex md:flex-col flex flex-col items-center gap-5">
+        <p className="md:text-4xl text-2xl text-center md:inline w-full">{t('home.buxoroMahsuloti')}</p>
+        <p className="md:text-start text-center w-3/4">
+        {t('home.buxoroMahsulotiBody')}
         </p>
-        <a
-          href="#"
+        <Link
+          to="/shop"
           className="text-black text-center w-32 py-1 rounded-2xl bg-white"
         >
-          To'plam
-        </a>
+          {t('navbar.toplam')}
+        </Link>
       </div>
     </div>
   );
 };
 
 const Home = () => {
+
+  const {t, i18n} = useTranslation()
   const data = [
     {
       icon: "/icons/servicesIcon.svg",
-      head: "Yetkazib berish bepul",
-      body: "Barcha buyurtmalar uchun bepul yetkazib berish",
+      head: t('home.data.head1'),
+      body: t('home.data.body1'),
     },
     {
       icon: "/icons/servicesIcon2.svg",
-      head: "Qaytish kafolati",
-      body: "30 kunlik pulni qaytarish",
+      head: t('home.data.head2'),
+      body: t('home.data.body2'),
     },
     {
       icon: "/icons/servicesIcon3.svg",
-      head: "24/7 onlayn qo'llab-quvvatlash",
-      body: "24/7 texnik yordam",
+      head: t('home.data.head3'),
+      body: t('home.data.body3'),
     },
     {
       icon: "/icons/servicesIcon4.svg",
-      head: "Xavfsiz to'lov",
-      body: "Barcha to'lov usullari qabul qilinadi",
+      head: t('home.data.head4'),
+      body: t('home.data.body4'),
     },
   ];
 
@@ -73,17 +76,16 @@ const Home = () => {
   const qish = filterBySeason("qish");
   const kuz = filterBySeason("kuz");
   const yoz = filterBySeason("yoz");
-  console.log(qish);
 
   let qishData = qish?.map((d, index) => (
-    <Link to={`detail/${d.id}`} key={index}>
+    <Link to={`toplam/${d.id}`} key={index}>
       <img src={d.img} alt="photo" className="w-72 rounded-xl" />
       <p>{d.name}</p>
     </Link>
   ));
 
   let kuzData = kuz?.map((d, index) => (
-    <Link to={`detail/${d.id}`} key={index}>
+    <Link to={`toplam/${d.id}`} key={index}>
       <img src={d.img} alt="photo" className="w-72 rounded-xl" />
       <p>{d.name}</p>
     </Link>
@@ -91,7 +93,7 @@ const Home = () => {
 
 
   let yozData = yoz?.map((d, index) => (
-    <Link to={`detail/${d.id}`} key={index}>
+    <Link to={`toplam/${d.id}`} key={index}>
       <img src={d.img} alt="photo" className="w-72 rounded-xl" />
       <p>{d.name}</p>
     </Link>
@@ -99,29 +101,29 @@ const Home = () => {
 
   return (
     <div data-aos="fade-in" className="w-full flex flex-col justify-center items-center">
-      <div className="bg-gray-600 min-h-[600px] rounded-xl py-10 w-[100%]">
+      <div className="bg-gray-600 md:min-h-[600px] h-[400px] rounded-xl md:py-10 w-[100%]">
         <img
           src="/images/111-copy.png"
-          className="w-[90%] absolute -left-64 top-20"
+          className="md:w-[90%] md:absolute md:-left-64 md:top-20 md:inline hidden"
           alt="logo"
         />
 
         <div className="flex flex-col justify-end pt-24 text-white pr-3">
-          <span className="text-[3rem] text-end">Buxoro</span>
-          <span className="text-[6rem] text-end leading-none">Tabiiy</span>
-          <span className="text-[10rem] text-end leading-none">Mahsulot</span>
+          <span className="md:text-[3rem] md:text-end text-center text-[1rem]">{t('home.buxoro')}</span>
+          <span className="md:text-[6rem] md:text-end md:leading-none text-center text-[3rem]">{t('home.tabiiy')}</span>
+          <span className="md:text-[10rem] md:text-end md:leading-none text-center text-[3.5rem]">{t('home.mahsuloti')}</span>
         </div>
       </div>
-      <div className="flex">{iconData}</div>
+      <div className="md:flex block">{iconData}</div>
       <ArrowAd img={"/images/quality__img.png"} color={"#616884"} />
-      <h1 className="font-semibold">Qish kolleksiyasi</h1>
-      <div className="grid grid-cols-5 gap-10 mt-10">{qishData}</div>
+      <h1 className="font-semibold md:text-start md:text-6xl text-3xl text-center">{t('home.qish')}</h1>
+      <div className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{qishData}</div>
       <ArrowAd img={"/images/q.png"} color={"#625686"} /> 
-      <h1 className="font-semibold">Kuz kolleksiyasi</h1>
-      <div className="grid grid-cols-5 gap-10 mt-10">{kuzData}</div>
+      <h1 className="font-semibold md:text-start md:text-6xl text-3xl text-center">{t('home.kuz')}</h1>
+      <div className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{kuzData}</div>
       <ArrowAd img={"/images/quality__img3.png"} color={"#307E7A"} /> 
-      <h1 className="font-semibold">Yozgi kolleksiyasi</h1>
-      <div className="grid grid-cols-5 gap-10 mt-10">{yozData}</div>
+      <h1 className="font-semibold md:text-start md:text-6xl text-3xl text-center">{t('home.yoz')}</h1>
+      <div className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{yozData}</div>
     </div>
   );
 };

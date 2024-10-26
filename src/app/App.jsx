@@ -3,6 +3,7 @@ import router from "./provider/router";
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import { useEffect } from "react";
+import '../i18n'
 
 
 

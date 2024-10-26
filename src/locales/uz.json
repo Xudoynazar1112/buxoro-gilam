@@ -1,0 +1,40 @@
+{
+    "navbar": {
+        "toplam": "To'plam",
+        "haqida": "Biz Haqimizda",
+        "aloqa": "Aloqa",
+        "uzb": "O'zbek",
+        "rus": "Rus",
+        "eng": "Ingiliz"
+    },
+    "footer": {
+        "body": "“Bukhara Natural Product” koʻp yillardan buyon butun dunyoda foydalanish uchun paxta matolari ishlab chiqaradigan kompaniya hisoblanadi.",
+        "menu": "Menu",
+        "body2": "Buxoro, st. Alpomish 80. Bnpuz@bk.ru bnp_fabrik info@bnpfabric.com +998 93 383 75 85 +998 93 960 78 00",
+        "email": "Eleltron pochtamizga obuna bo'ling",
+        "emailPlace": "Elektron pochtangizni kiriting",
+        "search": "Qidirish",
+        "body3": "© 2024 MChJ 'BUXORA NATURAL PRODUCT'. Barcha huquqlar himoyalangan."
+    },
+    "home": {
+        "sifat": "Material sifati",
+        "buxoroMahsuloti": "'Buxoro tabiiy mahsuloti'",
+        "buxoroMahsulotiBody": "ko'p yillar davomida butun dunyoda foydalanish uchun paxta matolarini ishlab chiqaradigan kompaniya bo'lib kelgan",
+        "data": {
+            "head1": "Yetkazib berish bepul",
+            "body1": "Barcha buyurtmalar uchun bepul yetkazib berish",
+            "head2": "Qaytish kafolati",
+            "body2": "30 kunlik pulni qaytarish",
+            "head3": "24/7 onlayn qo'llab-quvvatlash",
+            "body3": "24/7 texnik yordam",
+            "head4": "Xavfsiz to'lov",
+            "body4": "Barcha to'lov usullari qabul qilinadi"
+        },
+        "buxoro": "Buxoro",
+        "tabiiy": "Tabiiy",
+        "mahsuloti": "Mahsuloti",
+        "qish": "Qish kolleksiyasi",
+        "yoz": "Yoz kolleksiyasi",
+        "kuz": "Kuz kolleksiyasi"
+    }
+}

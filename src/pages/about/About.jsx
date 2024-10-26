@@ -2,8 +2,8 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="my-14 flex gap-10">
-      <div className="w-1/2">
+    <div className="my-14 md:flex gap-10">
+      <div className="md:w-1/2">
         <h1 className="mb-10">Buxoro tabiiy mahsuloti</h1>
         <p>
           Buxoro matolari, Eko sumkalar, Buxoro matolari, Eko sumkalarFabrikamız
