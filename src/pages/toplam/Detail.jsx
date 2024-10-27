@@ -2,7 +2,6 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import mainData from "../data";
 import ReviewDetail from "./ReviewDetail";
-import { Alert } from "@lemonsqueezy/wedges";
 
 const Detail = () => {
   const { id } = useParams(); // Get the ID from the URL
