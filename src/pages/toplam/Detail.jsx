@@ -1,6 +1,8 @@
 import React from "react";
 import { Link, useParams } from "react-router-dom";
 import mainData from "../data";
+import ReviewDetail from "./ReviewDetail";
+import { Alert } from "@lemonsqueezy/wedges";
 
 const Detail = () => {
   const { id } = useParams(); // Get the ID from the URL
@@ -66,7 +68,12 @@ const Detail = () => {
           </p>
         </div>
       </div>
-      <hr />
+      <hr className="border w-full" />
+      <div>
+        <h2>Sharhlaar</h2>
+        
+        <ReviewDetail />
+      </div>
       <div className="my-5">
         <h1 className="text-center md:my-10 md:text-4xl my-5 text-2xl">Shunga o'xshash mahsulotlar</h1>
         <div className="grid md:grid-cols-4 md:gap-10 grid-cols-2 gap-5">{otherData}</div>

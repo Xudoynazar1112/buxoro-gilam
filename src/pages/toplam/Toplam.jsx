@@ -38,9 +38,7 @@ const Toplam = () => {
   const filteredProducts = mainData.filter((product) =>
     product.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
-  if (!searchQuery) {
-    console.log(searchQuery.length);
-  }
+
 
   return (
     <div className="md:flex md:justify-between md:gap-5 w-full mb-20">
@@ -71,9 +69,6 @@ const Toplam = () => {
           </div>
 
           <ul className="flex flex-col pl-5 mt-7 gap-3">
-            <li>
-              <Link to="/shop/baxor">Bahor kalleksiyasi</Link>
-            </li>
             <li>
               <Link to="/shop/qish">Qish kalleksiyasi</Link>
             </li>
