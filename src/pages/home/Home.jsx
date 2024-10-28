@@ -10,12 +10,12 @@ const ArrowAd = ({ img, color }) => {
     <div
       className={`md:flex md:flex-row flex flex-col md:px-10 items-center justify-center md:h-80 h-[30rem] md:my-52 my-20 rounded-2xl bg-[${color}] box-shadow transition-all`}
       style={{ backgroundColor: color }}>
-      <div className="text-white  flex gap-3 md:flex md:flex-col">
+      <div data-aos="fade-up" className="text-white  flex gap-3 md:flex md:flex-col">
         <p className="md:text-[70px] font-semibold text-base">100%</p>
         <p>{t('home.sifat')}</p>
       </div>
       <img src={img} className="md:w-[67%] w-[40%]" alt="photo" />
-      <div className="md:pr-20 text-white md:flex md:flex-col flex flex-col items-center gap-5">
+      <div data-aos="fade-down" className="md:pr-20 text-white md:flex md:flex-col flex flex-col items-center gap-5">
         <p className="md:text-4xl text-2xl text-center md:inline w-full">{t('home.buxoroMahsuloti')}</p>
         <p className="md:text-start text-center w-3/4">
         {t('home.buxoroMahsulotiBody')}
@@ -114,16 +114,16 @@ const Home = () => {
           <span className="md:text-[10rem] md:text-end md:leading-none text-center text-[3.5rem]">{t('home.mahsuloti')}</span>
         </div>
       </div>
-      <div className="md:flex block">{iconData}</div>
+      <div data-aos="fade-up" className="md:flex block">{iconData}</div>
       <ArrowAd img={"/images/quality__img.png"} color={"#616884"} />
       <h1 className="font-semibold md:text-start md:text-6xl text-3xl text-center">{t('home.qish')}</h1>
-      <div className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{qishData}</div>
+      <div data-aos="fade-up" className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{qishData}</div>
       <ArrowAd img={"/images/q.png"} color={"#625686"} /> 
       <h1 className="font-semibold md:text-start md:text-6xl text-3xl text-center">{t('home.kuz')}</h1>
-      <div className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{kuzData}</div>
+      <div data-aos="fade-up" className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{kuzData}</div>
       <ArrowAd img={"/images/quality__img3.png"} color={"#307E7A"} /> 
       <h1 className="font-semibold md:text-start md:text-6xl text-3xl text-center">{t('home.yoz')}</h1>
-      <div className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{yozData}</div>
+      <div data-aos="fade-up" className="grid md:grid-cols-5 grid-cols-2 gap-10 my-10">{yozData}</div>
     </div>
   );
 };

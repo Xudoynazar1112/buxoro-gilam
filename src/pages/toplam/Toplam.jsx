@@ -13,21 +13,21 @@ const Toplam = () => {
 
   let qishData = qish?.map((d) => (
     <Link to={`/toplam/${d.id}`} key={d.id}>
-      <img src={d.img} alt="photo" className="w-72 rounded-xl" />
+      <img src={d.img} alt="photo" className="md:w-72 w-full rounded-xl" />
       <p>{d.name}</p>
     </Link>
   ));
 
   let kuzData = kuz?.map((d) => (
     <Link to={`/toplam/${d.id}`} key={d.id}>
-      <img src={d.img} alt="photo" className="w-72 rounded-xl" />
+      <img src={d.img} alt="photo" className="md:w-72 w-full rounded-xl" />
       <p>{d.name}</p>
     </Link>
   ));
 
   let yozData = yoz?.map((d) => (
     <Link to={`/toplam/${d.id}`} key={d.id}>
-      <img src={d.img} alt="photo" className="w-72 rounded-xl" />
+      <img src={d.img} alt="photo" className="md:w-72 w-full rounded-xl" />
       <p>{d.name}</p>
     </Link>
   ));
@@ -42,8 +42,8 @@ const Toplam = () => {
 
   return (
     <div className="md:flex md:justify-between md:gap-5 w-full mb-20">
-      <div className="w-[20%]">
-        <div>
+      <div className="md:w-[20%]">
+        <div data-aos="fade-right">
           <div className="md:flex flex flex-col">
             <form className="max-w-md">
               <label
@@ -81,7 +81,7 @@ const Toplam = () => {
           </ul>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up" >
         <h1 className={`${searchQuery.length > 0 ? 'hidden' : 'block'} my-5`}>To'plam</h1>
         <div className={`${searchQuery.length > 0 ? 'hidden' : 'grid'} grid-cols-1 md:grid-cols-4 gap-5`}>
           {qishData} {kuzData} {yozData}

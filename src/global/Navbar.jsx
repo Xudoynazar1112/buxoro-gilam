@@ -16,7 +16,7 @@ const Navbar = () => {
   };
   return (
     <>
-      <div className="flex justify-between md:block px-10">
+      <div className="flex justify-between md:block md:px-10 px-4">
         <div className="flex items-center justify-between py-7">
           <NavLink to="/">
             <img src="/icons/header__icon.png" alt="logo" className="w-36" />
@@ -43,14 +43,14 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <div className="md:hidden">
-          <button className="text-4xl" onClick={toggleNavbar}>
+        <div className="md:hidden mt-6">
+          <button className="text-sm" onClick={toggleNavbar}>
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>
       </div>
       {isOpen && (
-        <ul className="flex flex-col basis-full items-center gap-10 fixed right-0 top-24 pt-[20%] w-80 h-full bg-white z-20 md:hidden text-2xl">
+        <ul className="flex flex-col basis-full items-center gap-10 fixed right-0 top-20 pt-[20%] w-80 h-full bg-white z-20 md:hidden text-2xl">
           <li onClick={toggleNavbar}>
             <NavLink to="/shop">{t('navbar.toplam')}</NavLink>
           </li>

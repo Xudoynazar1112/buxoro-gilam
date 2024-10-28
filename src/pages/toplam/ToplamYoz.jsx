@@ -64,7 +64,7 @@ const Toplam = () => {
           </ul>
         </div>
       </div>
-      <div>
+      <div data-aos="fade-up">
         <h1 className={`${searchQuery.length > 0 ? 'hidden' : 'block'} my-5`}>To'plam</h1>
         <div className={`${searchQuery.length > 0 ? 'hidden' : 'grid'} grid-cols-1 md:grid-cols-4 gap-5`}>
           {yozData}
