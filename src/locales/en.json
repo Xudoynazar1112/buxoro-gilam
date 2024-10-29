@@ -36,5 +36,11 @@
         "qish": "Winter collection",
         "yoz": "Summer collection",
         "kuz": "Autumn collection"
-    }
+    },
+    "detail": "Feedbacks",
+    "detail_rate": "Rate",
+    "detail_name": "Name",
+    "detail_email": "Email",
+    "detail_comment": "Comment",
+    "detail_submit": "Submit"
 }

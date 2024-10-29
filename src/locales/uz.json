@@ -36,5 +36,11 @@
         "qish": "Qish kolleksiyasi",
         "yoz": "Yoz kolleksiyasi",
         "kuz": "Kuz kolleksiyasi"
-    }
+    },
+    "detail": "Sharhlar",
+    "detail_rate": "Baho",
+    "detail_name": "Ism",
+    "detail_email": "Email",
+    "detail_comment": "Izoh",
+    "detail_submit": "Jo'natish"
 }

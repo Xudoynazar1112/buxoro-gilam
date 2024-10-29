@@ -101,7 +101,7 @@ const ReviewDetail = () => {
           onSubmit={handleSubmit}
           className="flex flex-col m-auto mb-20 md:w-1/2"
         >
-          <span>Rate: </span>
+          <span>{t('detail_rate')}: </span>
           <Box
             sx={{ width: 200, display: "flex", alignItems: "center", mb: 2 }}
           >
@@ -121,7 +121,7 @@ const ReviewDetail = () => {
             )}
           </Box>
           <div className="mb-2">
-            <label>{t("Your Name")}:</label>
+            <label>{t("detail_name")}:</label>
             <input
               type="text"
               name="name"
@@ -132,7 +132,7 @@ const ReviewDetail = () => {
             />
           </div>
           <div className="mb-2">
-            <label>{t("Email")}:</label>
+            <label>{t("detail_email")}:</label>
             <input
               type="email"
               name="email"
@@ -143,7 +143,7 @@ const ReviewDetail = () => {
             />
           </div>
           <div className="mb-2">
-            <label>{t("Comment")}:</label>
+            <label>{t("detail_comment")}:</label>
             <textarea
               name="comment"
               value={formData.comment}
@@ -156,7 +156,7 @@ const ReviewDetail = () => {
             type="submit"
             className="bg-blue-500 text-white px-4 py-2 rounded mt-2"
           >
-            {t("Submit")}
+            {t("detail_submit")}
           </button>
         </form>
       </div>

@@ -2,9 +2,11 @@ import React from "react";
 import { Link, useParams } from "react-router-dom";
 import mainData from "../data";
 import ReviewDetail from "./ReviewDetail";
+import { useTranslation } from "react-i18next";
 
 const Detail = () => {
   const { id } = useParams(); // Get the ID from the URL
+  const {t, i18n} = useTranslation()
 
   const filterBySeason = (season) => {
     return mainData.filter((a) => a.season === season);
@@ -65,7 +67,7 @@ const Detail = () => {
       </div>
       <hr className="border w-full" />
       <div className="w-full">
-        <h1 className="text-center md:text-6xl text-4xl">Sharhlar</h1>
+        <h1 className="text-center md:text-6xl text-4xl">{t('detail')}</h1>
         <ReviewDetail />
       </div>
       <div className="my-5" data-aos="fade-up">
